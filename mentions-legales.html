@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — Fanny Toernig Naturopathe</title>
+<meta name="description" content="Mentions légales du site naturopathe-tca.fr — Fanny Toernig, naturopathe à Boulogne-Billancourt.">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>/* ============================================
+   Fanny Conseils de Vie — CSS complet
+   ============================================ */
+
+:root {
+  --cream: #FFF8E7;
+  --cream-deep: #F8F1E5;
+  --blush: #F0DFB0;
+  --blush-soft: #FAF5EC;
+  --rose-nude: #E2BE82;
+  --rose-deep: #D4A843;
+  --text-main: #4A3F3A;
+  --text-soft: #A6906F;
+  --white: #FFFFFF;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  --radius: 18px;
+  --shadow-soft: 0 8px 30px rgba(212,168,67,0.08);
+  --max-width: 1140px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: #FFFFFF;
+  color: var(--text-main);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; border-radius: var(--radius); }
+a { color: inherit; text-decoration: none; }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.2; color: var(--text-main); }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+h3 { font-size: 1.2rem; }
+
+em, .accent-italic { font-style: italic; color: var(--rose-deep); }
+p { color: var(--text-soft); }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose-deep);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* ===== NAVIGATION ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,248,231,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--blush-soft);
+  box-shadow: 0 2px 16px rgba(212,168,67,0.04);
+}
+
+.nav-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--blush);
+  flex-shrink: 0;
+}
+
+nav { flex: 1; display: flex; justify-content: center; }
+
+nav ul.nav-links {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 4px;
+  list-style: none !important;
+  margin: 0; padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul.nav-links li { list-style: none; }
+
+nav ul.nav-links li a {
+  display: block;
+  padding: 7px 13px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+nav ul.nav-links li a:hover,
+nav ul.nav-links li a.active {
+  background: #fff;
+  color: var(--rose-deep);
+}
+
+.nav-cta { display: flex; align-items: center; flex-shrink: 0; }
+.nav-cta .btn { font-size: 0.83rem; padding: 9px 18px; white-space: nowrap; }
+
+.menu-toggle {
+  display: none;
+  background: none; border: none;
+  font-size: 1.5rem; cursor: pointer;
+  color: var(--text-main); flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle { display: block; }
+  nav { display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 99; }
+  nav.open {
+    display: flex;
+    background: rgba(255,248,231,0.98);
+    border-bottom: 1px solid var(--cream-deep);
+    box-shadow: 0 4px 16px rgba(212,168,67,0.05);
+    padding: 10px 16px;
+  }
+  nav.open ul.nav-links { flex-wrap: wrap; justify-content: flex-start; }
+  .nav-cta { display: none; }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary { background: var(--rose-deep); color: var(--white); box-shadow: var(--shadow-soft); }
+.btn-primary:hover { background: #C89A30; transform: translateY(-2px); }
+.btn-secondary { background: transparent; color: var(--rose-deep); border: 1.5px solid var(--rose-nude); }
+.btn-secondary:hover { background: #fff; }
+.btn-ghost { color: var(--text-main); font-weight: 500; border-bottom: 1.5px solid var(--rose-nude); border-radius: 0; padding: 4px 0; }
+
+/* ===== Hero ===== */
+.hero {
+  padding: 70px 0 60px;
+  background: #fff;
+  position: relative;
+}
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+.hero-welcome { font-size: 1.35rem; color: var(--rose-deep); margin-bottom: 18px; font-weight: 700; }
+.hero h1 { margin-bottom: 20px; }
+.hero-lead { font-size: 1.05rem; margin-bottom: 24px; max-width: 540px; }
+.hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; }
+.trust-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+.trust-badges span { font-size: 0.85rem; color: var(--text-soft); display: flex; align-items: center; gap: 6px; }
+.hero-image-wrap { position: relative; border-radius: 24px; overflow: hidden; }
+.hero-image-wrap img { border-radius: 24px; width: 100%; }
+
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero { padding: 40px 0; }
+}
+
+/* ===== Sections ===== */
+section { padding: 70px 0; }
+.section-head { text-align: center; max-width: 620px; margin: 0 auto 48px; }
+.bg-alt { background: #fff; }
+.bg-blush { background: #fff; }
+.text-center { text-align: center; }
+.mt-40 { margin-top: 40px; }
+.small-note { font-size: 0.82rem; color: var(--text-soft); }
+
+/* ===== Tagcloud orbit ===== */
+.tagcloud-section { padding: 50px 0; text-align: center; background: #fff; }
+.tagcloud-orbit {
+  position: relative;
+  width: 700px; height: 700px;
+  margin: 40px auto 0;
+}
+.orbit-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(212,168,67,0.10);
+  border: 4px solid var(--blush);
+}
+.orbit-center img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.orbit-bubble {
+  position: absolute;
+  background: var(--white);
+  border: 2px solid var(--blush);
+  border-radius: 40px;
+  padding: 9px 18px;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(212,168,67,0.06);
+  transform: translate(-50%, -50%);
+}
+.ob-1  { top: 8%;  left: 50%; }
+.ob-2  { top: 19%; left: 20%; }
+.ob-3  { top: 19%; left: 80%; }
+.ob-4  { top: 32%; left: 5%;  }
+.ob-5  { top: 32%; left: 95%; }
+.ob-6  { top: 50%; left: 3%;  }
+.ob-7  { top: 50%; left: 97%; }
+.ob-8  { top: 68%; left: 8%;  }
+.ob-9  { top: 68%; left: 92%; }
+.ob-10 { top: 82%; left: 20%; }
+.ob-11 { top: 82%; left: 80%; }
+.ob-12 { top: 92%; left: 50%; }
+
+@media (max-width: 720px) {
+  .tagcloud-section .eyebrow,
+  .tagcloud-section h2,
+  .tagcloud-orbit .orbit-bubble { display: none; }
+  .tagcloud-orbit { width: auto; height: auto; margin: 0 auto; }
+  .tagcloud-orbit .orbit-center { position: static; transform: none; width: 220px; height: 220px; margin: 0 auto; }
+  #offre { padding-top: 48px !important; }
+}
+
+/* ===== Signs grid ===== */
+.signs-grid { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; }
+.sign-card { background: var(--white); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow-soft); flex: 1 1 300px; max-width: 340px; text-align: center; }
+.sign-card h3 { font-size: 1rem; }
+@media (max-width: 560px) { .sign-card { flex-basis: 100%; max-width: none; } }
+
+/* ===== Offres ===== */
+.offer-card { background: var(--white); border-radius: 24px; padding: 56px 52px; box-shadow: var(--shadow-soft); max-width: 1100px; margin: 0 auto; }
+.offer-tiers { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 36px; }
+.offer-tiers-3 { grid-template-columns: repeat(3,1fr) !important; }
+.offer-tiers-4 { grid-template-columns: repeat(4,1fr) !important; }
+.tier {
+  border: 1.5px solid var(--blush);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  background: #fff;
+  display: flex; flex-direction: column;
+}
+.tier.featured { border-color: var(--rose-deep); background: linear-gradient(160deg, var(--blush-soft), var(--cream)); position: relative; }
+.tier-decouverte { background: #fff !important; border-color: var(--cream-deep) !important; }
+.tier-badge { position: absolute; top: -12px; right: 20px; background: var(--rose-deep); color: white; font-size: 0.72rem; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+.tier h3 { margin-bottom: 8px; font-size: 1.1rem; }
+.tier .price { font-family: var(--font-display); font-size: 1.6rem; color: var(--rose-deep); margin: 10px 0 14px; }
+.tier ul { list-style: none; margin: 16px 0; }
+.tier ul li { font-size: 0.9rem; color: var(--text-soft); padding: 6px 0 6px 22px; position: relative; }
+.tier ul li::before { content: "✿"; position: absolute; left: 0; color: var(--rose-deep); font-size: 0.8rem; }
+.tier a.btn { margin-top: auto; align-self: center; }
+
+@media (max-width: 1100px) { .offer-tiers-4 { grid-template-columns: repeat(2,1fr) !important; } }
+@media (max-width: 700px) { .offer-tiers, .offer-tiers-3, .offer-tiers-4 { grid-template-columns: 1fr !important; } .offer-card { padding: 30px 22px; } }
+
+/* ===== Aspirations bulles ===== */
+.tagcloud-intro { max-width: 560px; margin: 0 auto 32px; }
+
+/* ===== Values ===== */
+.values-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; text-align: center; }
+.value-item .mark { font-size: 1.4rem; color: var(--rose-deep); margin-bottom: 12px; display: block; }
+.value-item h3 { font-size: 1.02rem; margin-bottom: 8px; }
+@media (max-width: 860px) { .values-grid { grid-template-columns: 1fr 1fr; } }
+
+/* ===== Story ===== */
+.story-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: start; }
+.story-grid img { box-shadow: var(--shadow-soft); }
+.story-caption { font-style: italic; font-size: 0.85rem; color: var(--text-soft); margin-top: 10px; text-align: center; }
+.story-text p { margin-bottom: 18px; }
+@media (max-width: 860px) { .story-grid { grid-template-columns: 1fr; } }
+
+/* ===== Steps ===== */
+.steps { display: flex; flex-direction: column; gap: 20px; max-width: 720px; margin: 0 auto; }
+.step { display: flex; gap: 22px; background: var(--white); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow-soft); }
+.step-num { font-family: var(--font-display); font-size: 1.3rem; color: var(--rose-deep); flex-shrink: 0; width: 40px; }
+.step h3 { margin-bottom: 8px; font-size: 1.05rem; }
+.step p { font-size: 0.92rem; }
+
+/* ===== Support ===== */
+.support-banner { background: #FFF0F5; border-radius: 22px; padding: 34px 38px; text-align: center; max-width: 760px; margin: 0 auto; }
+.support-banner p { color: var(--text-main); font-size: 0.95rem; }
+
+/* ===== Cards articles ===== */
+.cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; }
+.card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: transform 0.25s ease; }
+.card:hover { transform: translateY(-4px); }
+.card img { border-radius: 0; height: 190px; width: 100%; object-fit: cover; }
+.card-body { padding: 24px; }
+.card-eyebrow { font-size: 0.78rem; color: var(--rose-deep); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; display: block; }
+.card-body h3 { margin-bottom: 10px; }
+.card-body p { font-size: 0.92rem; margin-bottom: 16px; }
+@media (max-width: 860px) { .cards-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .cards-grid { grid-template-columns: 1fr; } }
+
+/* ===== Final CTA ===== */
+.final-cta { text-align: center; background: #fff; }
+.final-cta h2 { margin-bottom: 16px; }
+.final-cta p { max-width: 540px; margin: 0 auto 30px; }
+
+/* ===== FAQ ===== */
+.faq-item { background: var(--white); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 14px; box-shadow: var(--shadow-soft); }
+.faq-item h3 { font-size: 1rem; margin-bottom: 8px; }
+.faq-item p { font-size: 0.9rem; }
+
+/* ===== Reassurance list ===== */
+.reassurance-list { list-style: none; max-width: 640px; margin: 0 auto; }
+.reassurance-list li { padding: 12px 0 12px 30px; position: relative; border-bottom: 1px solid var(--cream-deep); font-size: 0.95rem; color: var(--text-main); }
+.reassurance-list li::before { content: "🌿"; position: absolute; left: 0; top: 12px; }
+
+/* ===== Mutuelle ===== */
+.mutuelle-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.mutuelle-grid span { background: var(--white); border-radius: 10px; padding: 12px; text-align: center; font-size: 0.8rem; color: var(--text-soft); box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+@media (max-width: 700px) { .mutuelle-grid { grid-template-columns: repeat(2,1fr); } }
+
+/* ===== Contact ===== */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.contact-methods { display: flex; flex-direction: column; gap: 16px; }
+.contact-method { display: flex; align-items: center; gap: 10px; background: var(--white); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow-soft); }
+.contact-method .icon { font-size: 1.1rem; }
+.contact-method .label { font-size: 0.8rem; color: var(--text-soft); }
+.contact-method .value { font-weight: 600; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+
+/* ===== Page header ===== */
+.page-header { padding: 50px 0 40px; background: #fff; text-align: center; }
+.page-header .back-link { font-size: 0.88rem; color: var(--rose-deep); margin-bottom: 18px; display: inline-block; }
+.page-header p { max-width: 560px; margin: 14px auto 0; }
+
+/* ===== Footer ===== */
+footer { background: #fff; padding: 60px 0 30px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-brand p { font-size: 0.88rem; margin-top: 12px; }
+.footer-col h4 { font-size: 0.92rem; margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 0.88rem; color: var(--text-soft); }
+.footer-col a:hover { color: var(--rose-deep); }
+.footer-social { display: flex; gap: 14px; margin-top: 6px; }
+.footer-bottom { border-top: 1px solid var(--blush); padding-top: 24px; font-size: 0.8rem; color: var(--text-soft); text-align: center; }
+.footer-disclaimer { font-size: 0.78rem; color: var(--text-soft); text-align: center; max-width: 700px; margin: 0 auto 24px; }
+@media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* ===== Detail pages ===== */
+.detail-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+@media (max-width: 860px) { .detail-hero { grid-template-columns: 1fr; } }
+
+/* ===== Séparateurs roses ===== */
+header { border-bottom: 2px solid var(--blush) !important; background: #fff !important; }
+footer { border-top: 2px solid var(--blush); }
+.footer-disclaimer { border-top: 1px solid var(--blush-soft); padding-top: 20px; margin-top: 20px; }
+
+/* ===== CTA dégradé ===== */
+.final-cta { background: linear-gradient(135deg, var(--cream) 0%, var(--blush-soft) 100%) !important; }
+
+/* ===== Aspiration bulles flex-wrap pleine largeur ===== */
+.aspiration-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 100%;
+}
+
+</style>
+<link rel="canonical" href="https://naturopathe-tca.fr/mentions-legales.html">
+</head>
+<body>
+<div>
+
+
+<header style="background:#fff;border-bottom:2px solid #F0DFB0;">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="data:image/jpeg;base64,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" alt="Fanny Toernig, naturopathe à Boulogne-Billancourt">
+      Fanny Toernig<br><small style="font-size:0.65rem;font-weight:400;color:var(--text-soft);">Naturopathe</small>
+    </a>
+    <nav>
+      <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="consultations.html">Consultations</a></li>
+      <li><a href="mon-histoire.html">Mon histoire</a></li>
+      <li><a href="remboursements.html">Remboursements</a></li>      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://www.medoucine.com/consultation/boulogne-billancourt/fanny-toernig/23413" class="btn btn-primary">Prendre RDV</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <a href="index.html" class="back-link">← Accueil</a>
+    <span class="eyebrow">Informations légales</span>
+    <h1>Mentions <em>légales</em></h1>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="max-width: 760px;">
+    <h3 style="margin-bottom: 16px;">Éditeur du site</h3>
+    <p style="margin-bottom: 30px;">Ce site est édité par Fanny Toernig, naturopathe et psychopraticienne à Boulogne-Billancourt.<br>
+    SIRET : 940 968 399 00011<br>
+    Téléphone : <a href="tel:+33658821655" style="color: var(--rose-deep);">06.58.82.16.55</a><br>
+    E-mail : <a href="mailto:fanny.naturopathe@outlook.fr" style="color: var(--rose-deep);">fanny.naturopathe@outlook.fr</a></p>
+
+    <h3 style="margin-bottom: 16px;">Avertissement médical</h3>
+    <p style="margin-bottom: 30px;">Le naturopathe et le psychopraticien n'effectuent pas d'actes médicaux. Ils ne posent pas de diagnostic et ne remplacent pas l'avis d'un médecin, d'un psychiatre ou d'un psychologue.<br><br>
+    L'accompagnement proposé sur ce site, notamment dans le cadre des troubles des conduites alimentaires, est un accompagnement complémentaire à un suivi médical et/ou psychologique, et non un substitut. En cas de symptômes sévères ou de mise en danger, consultez sans délai un professionnel de santé ou contactez les services d'urgence.</p>
+
+    <h3 style="margin-bottom: 16px;">Propriété intellectuelle</h3>
+    <p style="margin-bottom: 30px;">Le contenu de ce site (textes, images, logos) est la propriété exclusive de Fanny Toernig. Toute reproduction sans autorisation est interdite.</p>
+
+    <h3 style="margin-bottom: 16px;">Protection des données personnelles</h3>
+    <p>Les informations collectées lors de vos prises de rendez-vous sont traitées conformément au RGPD et ne sont utilisées qu'à des fins de gestion des consultations. Vous disposez d'un droit d'accès, de modification et de suppression de vos données en contactant fanny.naturopathe@outlook.fr.</p>
+  </div>
+</section>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,var(--blush),transparent);margin:0;"></div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+      <img src="data:image/jpeg;base64,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" alt="Fanny Toernig, naturopathe à Boulogne-Billancourt"> Fanny Toernig
+        </div>
+        <p>Naturopathe<br>Micronutritionniste<br>Psychopraticienne</p>
+        <p style="margin-top:8px;font-size:0.85rem;line-height:1.6;"><a href="https://www.google.com/maps/search/?api=1&amp;query=%C3%89vol%C3%A9oz%20Boulogne%2C%2073%20Rue%20Marcel%20Dassault%2C%20Boulogne-Billancourt" target="_blank" style="color:var(--rose-deep);text-decoration:none;">📍 Évoléoz Boulogne <strong>— Centre de bien-être et de thérapie</strong> — 73 Rue Marcel Dassault à Boulogne-Billancourt</a></p><p style="margin-top:6px;font-size:0.85rem;line-height:1.6;">🚇 Ligne 9 · Porte de Saint-Cloud / Marcel Sembat</p><p style="margin-top:6px;font-size:0.85rem;line-height:1.6;">En visioconférence : tous les jours — Au cabinet : Dimanche de 10 h à 18 h</p>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+          <li><a href="mon-histoire.html">Mon histoire</a></li>        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pratique</h4>
+        <ul>
+          <li><a href="remboursements.html">Remboursements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul style="display:flex;flex-direction:column;gap:8px;">
+          <li style="display:flex;align-items:center;gap:8px;"><a href="https://wa.me/33658821655" target="_blank" style="display:flex;align-items:center;gap:6px;">💬 WhatsApp</a></li>
+          <li style="display:flex;align-items:center;gap:8px;"><a href="tel:+33658821655" style="display:flex;align-items:center;gap:6px;">📞 06.58.82.16.55</a></li>
+          <li style="display:flex;align-items:center;gap:8px;"><a href="mailto:fanny.naturopathe@outlook.fr" style="display:flex;align-items:center;gap:6px;white-space:nowrap;">✉️ fanny.naturopathe@outlook.fr</a></li>
+        </ul>
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;">
+          <a href="https://www.linkedin.com/in/fanny-toernig-0a14b9301?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blush-soft);border:1.5px solid var(--blush);font-size:1.1rem;text-decoration:none;" title="LinkedIn">🔵</a>
+          <a href="https://www.instagram.com/fanny.naturopathe.tca?igsh=c3dkb250OGpoanhk&utm_source=qr" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blush-soft);border:1.5px solid var(--blush);font-size:1.1rem;text-decoration:none;" title="Instagram">📷</a>
+          <a href="https://www.tiktok.com/@fanny.naturopathe.tca?_r=1&_t=ZN-97PpAjspFuY" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blush-soft);border:1.5px solid var(--blush);font-size:1.1rem;text-decoration:none;" title="TikTok">🎵</a>
+          <a href="https://www.facebook.com/share/1AquQQB4NZ/?mibextid=wwXIfr" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blush-soft);border:1.5px solid var(--blush);font-size:1.1rem;text-decoration:none;" title="Facebook">👤</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Cet accompagnement ne remplace pas un suivi médical et/ou psychologique. En cas de détresse, contactez Anorexie Boulimie Info Écoute au 0810 037 037 ou les services d'urgence.</p>
+    <div class="footer-bottom">© 2026 Fanny Toernig — Tous droits réservés</div>
+  </div>
+</footer>
+
+
+
+
+</div>
+<script>document.addEventListener('DOMContentLoaded',function(){function closeAllNavs(){document.querySelectorAll('nav.open').forEach(function(n){n.classList.remove('open');});}document.querySelectorAll('.menu-toggle').forEach(function(toggle){toggle.addEventListener('click',function(e){e.stopPropagation();var wrap=toggle.closest('.nav-wrap');var nav=wrap?wrap.querySelector('nav'):null;if(nav)nav.classList.toggle('open');});});document.addEventListener('click',function(e){if(e.target.closest('nav')||e.target.closest('.menu-toggle'))return;closeAllNavs();});});</script>
+</body>
+</html>
