@@ -378,12 +378,13 @@ footer { background: #fff; padding: 60px 0 30px; }
 .footer-col a { font-size: 0.88rem; color: var(--text-soft); }
 .footer-col a:hover { color: var(--rose-deep); }
 .footer-social { display: flex; gap: 14px; margin-top: 6px; }
-.footer-info { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; column-gap: 60px; row-gap: 1.6em; grid-template-areas: "visio . ." "cabinet adresse metro"; margin-bottom: 40px; font-size: 0.85rem; line-height: 1.6; color: #7A5230; }
-.footer-info p { margin: 0; }
-.footer-info a { color: #7A5230; text-decoration: none; }
+.footer-info { display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; column-gap: 40px; row-gap: 1.6em; grid-template-areas: "visio cabinet adresse metro"; margin-bottom: 40px; font-size: 0.85rem; line-height: 1.6; color: #5A3A1E; }
+.footer-info p { margin: 0; color: #5A3A1E; }
+.footer-info a { color: #5A3A1E; text-decoration: none; }
 .footer-info a:hover { color: var(--rose-deep); }
 .fi-visio { grid-area: visio; } .fi-cabinet { grid-area: cabinet; } .fi-adresse { grid-area: adresse; } .fi-metro { grid-area: metro; }
-@media (max-width: 700px) { .footer-info { grid-template-columns: 1fr; grid-template-areas: "visio" "cabinet" "adresse" "metro"; } }
+@media (max-width: 860px) { .footer-info { grid-template-columns: 1fr 1fr; justify-content: stretch; grid-template-areas: "visio cabinet" "adresse metro"; } }
+@media (max-width: 560px) { .footer-info { grid-template-columns: 1fr; grid-template-areas: "visio" "cabinet" "adresse" "metro"; } }
 .footer-bottom { border-top: 1px solid var(--blush); padding-top: 24px; font-size: 0.8rem; color: var(--text-soft); text-align: center; }
 .footer-disclaimer { font-size: 0.78rem; color: var(--text-soft); text-align: center; max-width: 700px; margin: 0 auto 24px; }
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
