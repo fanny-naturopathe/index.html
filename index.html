@@ -286,8 +286,8 @@ section { padding: 70px 0; }
 .tier.featured { border-color: var(--rose-deep); background: linear-gradient(160deg, var(--blush-soft), var(--cream)); position: relative; }
 .tier-decouverte { background: #fff !important; border-color: var(--cream-deep) !important; }
 .tier-badge { position: absolute; top: -12px; right: 20px; background: var(--rose-deep); color: white; font-size: 0.72rem; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
-.tier h3 { margin-bottom: 8px; font-size: 1.1rem; }
-.tier .price { font-family: var(--font-display); font-size: 1.6rem; color: var(--rose-deep); margin: 10px 0 14px; }
+.tier h3 { margin-bottom: 8px; font-size: 1.6rem; font-weight: 400; color: var(--rose-deep); }
+.tier .price { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--text-main); margin: 10px 0 14px; }
 .tier ul { list-style: none; margin: 16px 0; }
 .tier ul li { font-size: 0.9rem; color: var(--text-soft); padding: 6px 0 6px 22px; position: relative; }
 .tier ul li::before { content: "✿"; position: absolute; left: 0; color: var(--rose-deep); font-size: 0.8rem; }
@@ -467,47 +467,11 @@ footer { border-top: 2px solid var(--blush); }
   </div>
 </section>
 
-<section style="background:#fff;">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Vous êtes au bon endroit si…</p>
-      <h2>Vous vous reconnaissez dans les situations suivantes</h2>
-    </div>
-    <div class="signs-grid">
-      <div class="sign-card" style="background:#F3E8FF;border-top:4px solid #C084FC;">
-        <h3>Votre relation à l'alimentation ou à votre corps vous épuise et vous souhaitez l'apaiser</h3>
-      </div>
-      <div class="sign-card" style="background:#FFE4EC;border-top:4px solid #E2BE82;">
-        <h3>Vous aimeriez un accompagnement quotidien dans votre alimentation</h3>
-      </div>
-      <div class="sign-card" style="background:#E8F4FF;border-top:4px solid #93C5FD;">
-        <h3>Vous enchaînez les rendez-vous sans jamais comprendre d'où viennent vos symptômes</h3>
-      </div>
-      <div class="sign-card" style="background:#E8FFE8;border-top:4px solid #86EFAC;">
-        <h3>Votre cycle, vos douleurs ou votre désir d'enfant vous interrogent</h3>
-      </div>
-      <div class="sign-card" style="background:#FFF0D4;border-top:4px solid #FFBD6B;">
-        <h3>Vous vous réveillez déjà fatigué(e) ou votre énergie ne tient pas la journée</h3>
-      </div>
-      <div class="sign-card" style="background:#FFF8E4;border-top:4px solid #FDE68A;">
-        <h3>Votre digestion vous pèse : ballonnements, inconforts, ventre capricieux...</h3>
-      </div>
-      <div class="sign-card" style="background:#FFE8E0;border-top:4px solid #FCA5A5;">
-        <h3>Votre peau vous préoccupe : vous avez des imperfections qui reviennent sans cesse</h3>
-      </div>
-      <div class="sign-card" style="background:#E0F7F4;border-top:4px solid #5EEAD4;">
-        <h3>Vous voulez mieux récupérer après le sport et soulager vos douleurs au quotidien</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section style="background:linear-gradient(135deg, var(--cream) 0%, var(--blush-soft) 100%);padding:70px 0;">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Ce que vous méritez</p>
       <h2>Ce que vous aimeriez ressentir</h2>
-      <p>Ces envies sont légitimes. Elles sont le point de départ de notre travail ensemble.</p>
+      <p>Votre santé est le point de départ de notre travail ensemble.</p>
     </div>
     <div class="aspiration-bubbles">
       <span style="background:#fff;border:2px solid #F0DFB0;border-radius:40px;padding:8px 16px;font-size:0.82rem;font-style:italic;color:#4A3F3A;box-shadow:0 4px 16px rgba(212,168,67,0.06);">✨ Me sentir bien dans mon corps</span>
@@ -558,13 +522,13 @@ footer { border-top: 2px solid var(--blush); }
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Mon accompagnement</p>
-      <h2>Une offre pensée pour vous</h2>
+      <h2>Qu'est-ce qui peut vous aider ?</h2>
     </div>
     <div class="offer-card" style="padding:56px 52px;max-width:1100px;">
       <div class="offer-tiers" style="justify-content:center;max-width:640px;margin:0 auto;">
         <div class="tier tier-decouverte">
           <h3>Visio découverte</h3>
-          <p class="price" style="font-size:1.6rem;">Gratuit</p>
+          <p class="price">Gratuit</p>
           <ul>
             <li>10 minutes en visioconférence</li>
             <li>Poser toutes vos questions</li>
@@ -573,7 +537,7 @@ footer { border-top: 2px solid var(--blush); }
         </div>
         <div class="tier">
           <h3>Consultation individuelle</h3>
-          <p class="price" style="font-size:1.6rem;">90 € <span style="font-size:1rem;color:var(--text-soft);">/ séance</span></p>
+          <p class="price">90 € <span style="font-size:1rem;color:var(--text-soft);">/ séance</span></p>
           <ul>
             <li>1h en visioconférence</li>
             <li>Toutes problématiques de santé physique et morale</li>
@@ -587,7 +551,7 @@ footer { border-top: 2px solid var(--blush); }
       <div class="offer-tiers offer-tiers-3" style="justify-content:center;max-width:1000px;margin:28px auto 0;">
         <div class="tier">
           <h3>Accompagnement « SOS TCA »<br>1 mois</h3>
-          <p class="price" style="font-size:1.6rem;"><span style="text-decoration:line-through;color:var(--text-soft);font-size:1.05rem;font-weight:400;margin-right:5px;">250 €</span>150 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
+          <p class="price">250 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
           <ul>
             <li>1 bilan par semaine</li>
             <li>Suivi par messages WhatsApp illimités (questions et conseils)</li>
@@ -601,7 +565,7 @@ footer { border-top: 2px solid var(--blush); }
         </div>
         <div class="tier">
           <h3>Accompagnement « SOS TCA »<br>3 mois</h3>
-          <p class="price" style="font-size:1.6rem;"><span style="text-decoration:line-through;color:var(--text-soft);font-size:1.05rem;font-weight:400;margin-right:5px;">200 €</span>150 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
+          <p class="price">200 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
           <ul>
             <li>1 bilan par semaine</li>
             <li>Suivi par messages WhatsApp illimités (questions et conseils)</li>
@@ -616,7 +580,7 @@ footer { border-top: 2px solid var(--blush); }
         <div class="tier featured">
           <span class="tier-badge">Le plus choisi</span>
           <h3>Accompagnement « SOS TCA »<br>6 mois</h3>
-          <p class="price" style="font-size:1.6rem;">150 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
+          <p class="price">150 € <span style="font-size:1rem;color:var(--text-soft);">/ mois</span></p>
           <ul>
             <li>1 bilan par semaine</li>
             <li>Suivi par messages WhatsApp illimités (questions et conseils)</li>
@@ -636,16 +600,8 @@ footer { border-top: 2px solid var(--blush); }
   <div class="container text-center">
     <div class="support-banner">
       <p><strong>Vous êtes en difficulté importante en ce moment ?</strong><br>
-      Ces accompagnements ne remplacent pas une prise en charge médicale ou psychologique, et encore moins une aide d'urgence. Si vous en avez besoin, la ligne <strong>Anorexie Boulimie Info Écoute</strong> est là pour vous écouter, de façon anonyme, au <strong>0810 037 037</strong> .</p>
+      Ces accompagnements ne remplacent pas une prise en charge médicale ou psychologique, et encore moins une aide d'urgence. Si vous en avez besoin, la ligne <strong>INFO ÉCOUTE : ANOREXIE BOULIMIE</strong> est là pour vous écouter, de façon anonyme, au <strong>09 69 325 900</strong> .</p>
     </div>
-  </div>
-</section>
-
-<section class="final-cta" style="background:linear-gradient(135deg,var(--cream),var(--blush-soft));">
-  <div class="container">
-    <h2>Prêt(e) à faire un premier pas ?</h2>
-    <p>Une visioconférence de 10 minutes découverte pour me poser toutes vos questions dès maintenant.</p>
-    <a href="https://www.medoucine.com/consultation/boulogne-billancourt/fanny-toernig/23413" class="btn btn-primary">Réserver ma visio découverte</a>
   </div>
 </section>
 
@@ -698,7 +654,7 @@ footer { border-top: 2px solid var(--blush); }
       <p class="fi-metro"><strong>🚇 Stations de métro ligne 9 :</strong><br><br>Porte de Saint-Cloud<br>Marcel Sembat</p>
     </div>
     </div>
-    <p class="footer-disclaimer">Cet accompagnement ne remplace pas un suivi médical et/ou psychologique. En cas de détresse, contactez Anorexie Boulimie Info Écoute au 0 800 00 63 76 (gratuit, anonyme) ou les services d'urgence.</p>
+    <p class="footer-disclaimer">Cet accompagnement ne remplace pas un suivi médical et/ou psychologique. En cas de détresse, contactez INFO ÉCOUTE : ANOREXIE BOULIMIE au 09 69 325 900 (gratuit, anonyme) ou les services d'urgence.</p>
     <div class="footer-bottom">© 2026 Fanny Toernig — Tous droits réservés · <a href="mentions-legales.html">Mentions légales</a></div>
   </div>
 </footer>
